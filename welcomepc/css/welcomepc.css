@@ -208,4 +208,14 @@ button:hover{
 footer{
 	height: 60px;
 	background-color: #003366;
+	display: flex;
+	justify-content: space-between;
+}
+
+p{
+	color: #fff;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
 }
