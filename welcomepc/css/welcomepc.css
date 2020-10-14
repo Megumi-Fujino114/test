@@ -205,17 +205,17 @@ button:hover{
 }
 
 /*footerここから*/
+
 footer{
-	height: 60px;
-	background-color: #003366;
+	background-color: #233f51;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px:;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-p{
-	color: #fff;
-	font-size: 16px;
-	display: flex;
-	align-items: center;
-	margin-right: 10px;
+.footer-right{
+	margin-right: 80px;
 }
