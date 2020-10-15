@@ -234,12 +234,20 @@ footer{
    .img-box{
 		flex-wrap: wrap;
 		align-content: space-around;
+		margin-left: 30px;
 	}
 
 	.img-box li span{
 		font-size: 18px;
 		margin-bottom: 15px;
 	}
+
+    .form .name, .form .email{
+	height: 50px;
+}
+    .form .inquiry{
+	height: 100px;
+}
 }
 
 /*スマホ用*/
@@ -342,5 +350,17 @@ footer{
 	margin-top: 20px;
 }
 
-
     /*footer*/
+
+    footer{
+    	display: flex;
+    	justify-content: center;
+    }
+
+    footer .icon{
+    	display: none;
+    }
+
+    footer .footer-right{
+    	margin-right: 0;
+    }
