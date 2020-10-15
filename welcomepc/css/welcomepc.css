@@ -230,12 +230,17 @@ footer{
 }
 
 /*タブレット用*/
-/*@media screen and (max-width: 960px){*/
-   /*img-box{*/
-		/*flex-wrap:wrap;*/
-		/*align-content: space-around;*/
-	/*}*/
-/*}*/
+@media screen and (max-width: 960px){
+   .img-box{
+		flex-wrap: wrap;
+		align-content: space-around;
+	}
+
+	.img-box li span{
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+}
 
 /*スマホ用*/
 @media screen and (max-width: 480px){
@@ -310,7 +315,32 @@ footer{
 .img-box li:first-child{
 	margin-top: 0px;
 }
+
+
 }
     /*contact*/
+.form{
+	flex-flow: column nowrap;
+	margin: 30px 0;
+}
+
+.form .name, .form .email, .form .inquiry{
+	width: 80%;
+}
+.form .name, .form .email{
+	height: 30px;
+}
+.form .inquiry{
+	height: 50px;
+}
+
+.form-left{
+	margin-right: 0px;
+}
+
+.form-right{
+	margin-top: 20px;
+}
+
 
     /*footer*/
