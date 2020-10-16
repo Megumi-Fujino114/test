@@ -224,9 +224,9 @@ footer{
 
 /*小型PC*/
 @media screen and (max-width: 1280px){
-  .img-box li{
+    .img-box li{
 	margin-right: 30px;
-  }
+     }
 }
 
 /*タブレット用*/
@@ -242,11 +242,27 @@ footer{
 		margin-bottom: 15px;
 	}
 
-    .form .name, .form .email{
-	height: 50px;
-}
+    .form{
+    flex-wrap: wrap;
+	align-content: space-around;
+
+    }
+
+    .form .name ,.form .email{
+	height: 40px;
+    }
+
     .form .inquiry{
-	height: 100px;
+	height: 80px;
+    }
+
+    .form-left{
+    	margin-right: 0px;
+    	margin-bottom: 30px;
+    }
+
+    .contact .form{
+	margin: 25px 0 0px;
 }
 }
 
@@ -254,39 +270,39 @@ footer{
 @media screen and (max-width: 480px){
   body{
   	min-width: 375px;
-  }
+     }
     /*header*/
-  .icon{
+    .icon{
   	margin-left: 20px;
-  }
+ 	 }
 
-.icon .name{
+   .icon .name{
 	display: none;
-}
+	}
 
-.header-right{
+   .header-right{
 	display: none;
-}
+	}
 
     /*welcome*/
-.title{
+  .title{
 	font-size: 30px;
-}
+	}
 
-.guideline{
+  .guideline{
 	font-size: 24px;
 	margin-top: 30px;
 	font-weight: normal;
-}
+	}
 
-.btn-group{
+  .btn-group{
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	margin-top: 50px;
-}
+	}
 
-.btn{
+  .btn{
 	height: 48px;
 	width: 140px;
 	margin-left: 30px;
@@ -294,73 +310,74 @@ footer{
 	font-size: 24px;
 	border-radius: 10px;
 	font-weight: bold;
-}
+	}
 
-.btn : first-child {
+  .btn : first-child {
 	margin-top: 0;
-}
+	}
 
     /*curriculum*/
-.subtitle{
+  .subtitle{
  font-size: 24px;
-}
+	}
 
-.img-box{
+  .img-box{
 	flex-flow: column nowrap;
-}
+	}
 
-.img-box li{
+  .img-box li{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 30px;
-}
+	}
 
-.img-box li span{
+  .img-box li span{
 	font-size: 16px;
-}
+    }
 
-.img-box li:first-child{
+  .img-box li:first-child{
 	margin-top: 0px;
-}
+    }
 
 
-}
+
     /*contact*/
-.form{
+  .contact .form{
 	flex-flow: column nowrap;
 	margin: 30px 0;
-}
+    }
 
-.form .name, .form .email, .form .inquiry{
+  .form .name, .form .email, .form .inquiry{
 	width: 80%;
-}
-.form .name, .form .email{
+    }
+  .form .name, .form .email{
 	height: 30px;
-}
-.form .inquiry{
+    }
+  .form .inquiry{
 	height: 50px;
-}
+    }
 
-.form-left{
+  .form-left{
 	margin-right: 0px;
-}
+    }
 
-.form-right{
+  .form-right{
 	margin-top: 20px;
-}
+    }
 
     /*footer*/
 
-    footer{
+   footer{
     	display: flex;
     	justify-content: center;
     }
 
-    footer .icon{
+   footer .icon{
     	display: none;
     }
 
     footer .footer-right{
     	margin-right: 0;
     }
+}
